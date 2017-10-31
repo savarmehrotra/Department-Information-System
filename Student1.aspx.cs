@@ -46,8 +46,10 @@ public partial class Student1 : System.Web.UI.Page
         }
 
         else if (RadioButtonList1.SelectedIndex == 1)
+        {
             qs += "StudentUpdate.apsx?unique_id";
             qs += uid;
+        }
 
         Response.Redirect(qs);
 

@@ -11,27 +11,36 @@ public partial class StudentDispaly : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Label1.Visible = false;
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Student;Integrated Security=True");
 
-        SqlCommand comm = new SqlCommand("Select * from Details where id=@uid");
 
-        //string ui = 
 
+
+
+        SqlCommand comm = new SqlCommand("Select * from Details where Id=@uid");
         int uiid;
         int.TryParse(Request.QueryString["unique_id"], out uiid);
-
+        Label1.Text = Request.QueryString["unique_id"];
+        Label1.Visible = true;
+        Label2.Visible = false;
         comm.Parameters.AddWithValue("@uid", uiid);
+        //string ui = 
+
+
 
 
         try
         {
             con.Open();
             SqlDataReader reader = comm.ExecuteReader();
+            Label2.Text = reader["Name"].ToString();
+            Label2.Visible = true;
 
             while(reader.Read())
             {
                 Label1.Text = reader["Name"].ToString();
-
+                Label1.Visible = true;
                 Label2.Text = reader["Id"].ToString();
 
                 Label3.Text = "COURSES COMPLETED : \n";
