@@ -9,6 +9,7 @@ public partial class LoginPage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        
 
         Label2.Visible = false;
         ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
@@ -27,5 +28,10 @@ public partial class LoginPage : System.Web.UI.Page
             Label2.Text = "INVALID CREDENTIALS";
             Label2.Visible = true;
         }
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Index.aspx");
     }
 }

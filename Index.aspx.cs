@@ -21,4 +21,16 @@ public partial class Index : System.Web.UI.Page
     {
         Response.Redirect("Student1.aspx");
     }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Inventory1.aspx");
+    }
+
+
+
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Account1.aspx");
+    }
 }

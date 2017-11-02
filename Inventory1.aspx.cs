@@ -15,13 +15,13 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Invgrid.aspx");
+        Response.Redirect("~/InventoryD.aspx");
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
         SqlConnection con = new SqlConnection();
-        con.ConnectionString = @"Data Source = (localdb)\MSSQLlocalDB; Initial Catalog = proj; Integrated Security = true ; Pooling =false";
+        con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Student;Integrated Security=True";
         try
         {
             con.Open();

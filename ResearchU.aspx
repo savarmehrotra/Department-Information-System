@@ -1,6 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ResearchU.aspx.cs" MasterFilePage="~/MasterPage.master"  Inherits="ResearchU" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ResearchU.aspx.cs" Inherits="ResearchU" %>
 
-<asp:Content ID =" conn1" ContentPlaceHolderID="ContentPlaceHolder1" runat ="server"> 
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
         <div>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -61,4 +68,6 @@
             <br />
             <br />
         </div>
-   </asp:Content> 
+    </form>
+</body>
+</html>
