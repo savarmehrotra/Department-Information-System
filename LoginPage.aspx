@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-<body style="background-image: url('file:///C:/Users/savar/Desktop/CompSciPortal/cs_department.png'); height: 1977px;">
+<body style="background-image: url('file:///C:/Users/savar/Desktop/CompSciPortal/cs_department.png');>
     <form id="form1" runat="server">
         <p>
             &nbsp;</p>
@@ -22,7 +22,11 @@
             <br />
             <br />
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+            <br />
+            <br />
+            <br />
+            &nbsp;
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"  InitialValue="Enter Username" ErrorMessage="Username Required"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat ="server" ControlToValidate="TextBox3" InitialValue="Enter Password" ErrorMessage="Password Required"></asp:RequiredFieldValidator>
            
@@ -40,7 +44,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Check" />
+            <asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Check" Width="99px" />
         </div>
     </form>
 </body>

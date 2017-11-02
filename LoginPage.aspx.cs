@@ -19,6 +19,7 @@ public partial class LoginPage : System.Web.UI.Page
     {
         if (TextBox2.Text.Equals("Admin") && TextBox3.Text.Equals("Admin"))
         {
+            Response.Redirect("Index.aspx");
         }
 
         else
