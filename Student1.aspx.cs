@@ -9,7 +9,7 @@ public partial class Student1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+       // ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
     }
 
     protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
@@ -38,20 +38,26 @@ public partial class Student1 : System.Web.UI.Page
 
         string qs = "";
 
+
+        
+
+
         if (RadioButtonList1.SelectedIndex == 0)
         {
             qs += "StudentDisplay.aspx?unique_id=";
             qs += uid;
+            Response.Redirect(qs);
 
         }
 
         else if (RadioButtonList1.SelectedIndex == 1)
         {
-            qs += "StudentUpdate.apsx?unique_id";
+            qs += "StudentUpdate.aspx?unique_id=";
             qs += uid;
+            Response.Redirect(qs);
         }
 
-        Response.Redirect(qs);
+        
 
     }
 

@@ -65,7 +65,7 @@ public partial class ResearchU : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Student;Integrated Security=True");
-        SqlCommand comm = new SqlCommand("INSERT INTO ResearchProjects(Project_Id,Faculty_Name ,Area, Amount) values(@id, @fname, @area, @amount) ", conn);
+        SqlCommand comm = new SqlCommand("INSERT INTO ResearchProjects(Project_Id,Faculty_Name ,Area, Amount) values(@id, @fname, @area, @amount);", conn);
         comm.Parameters.AddWithValue("@id", int.Parse(TextBox1.Text));
         comm.Parameters.AddWithValue("@fname", TextBox2.Text);
         comm.Parameters.AddWithValue("@area", TextBox3.Text);

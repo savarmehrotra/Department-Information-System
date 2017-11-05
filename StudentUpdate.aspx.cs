@@ -32,7 +32,7 @@ public partial class StudentUpdate : System.Web.UI.Page
         string g4 = TextBox8.Text;
 
 
-        string s = "Insert into Details(C1, Grade1, C2, Grade2, C3, Grade3, C4, Grade4) values(";
+        string s = "INSERT INTO Details VALUES(";
 
         s += c1;
         s += g1;
@@ -43,7 +43,7 @@ public partial class StudentUpdate : System.Web.UI.Page
         s += c4;
         s += g4;
 
-        s += ")where Id=";
+        s += ")WHERE Id=";
 
         s += sid;
 
